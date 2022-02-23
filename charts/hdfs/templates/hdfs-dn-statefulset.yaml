@@ -24,6 +24,12 @@ spec:
         app.kubernetes.io/instance: {{ .Release.Name | quote }}
     spec:
       affinity:
+        nodeAffinity:
+          requiredDuringSchedulingIgnoredDuringExecution:
+            nodeSelectorTerms:
+              - matchExpressions:
+                - key: hdfs-datanode-exclude
+                  operator: DoesNotExist
         podAntiAffinity:
         {{- if eq .Values.antiAffinity "hard" }}
           requiredDuringSchedulingIgnoredDuringExecution:
