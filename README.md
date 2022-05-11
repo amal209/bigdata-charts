@@ -32,8 +32,9 @@ image:
   registry: docker.io
   
   repository: jupyter/pyspark-notebook
-  
+ 
   tag: java-11.0.15
 ![image](https://user-images.githubusercontent.com/57093156/167864980-a5269bc2-0815-47e1-9a20-b55c1580605a.png)
 
- 
+## For more images and tags
+Go TO https://hub.docker.com/r/jupyter/pyspark-notebook/tags
