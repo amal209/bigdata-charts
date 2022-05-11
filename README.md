@@ -88,3 +88,16 @@ scripts/ct.sh lint-and-install \
 
 - See `reports/` file for generated console output.
 - Ensure to remove any secret data when uploading logs.
+
+
+## Install Jupyter
+In the actual jupyter chart the image that is used here doesn't contain JAVA
+### to change it with another image that contain java: 
+- Go to jupyter chart
+- in values.yaml change actual image TO 
+- image:
+  registry: docker.io
+  repository: jupyter/pyspark-notebook
+  tag: java-11.0.15
+
+ 
