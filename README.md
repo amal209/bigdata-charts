@@ -28,8 +28,11 @@ In the actual jupyter chart the image that is used doesn't contain JAVA
 * in values.yaml change actual image TO:
 
 image:
+
   registry: docker.io
+  
   repository: jupyter/pyspark-notebook
+  
   tag: java-11.0.15
 
  
