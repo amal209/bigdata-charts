@@ -26,12 +26,10 @@ In the actual jupyter chart the image that is used doesn't contain JAVA
 ## to change it with another image that contain java: 
 * Go to jupyter chart
 * in values.yaml change actual image TO:
-image:
 
+image:
   registry: docker.io
-  
   repository: jupyter/pyspark-notebook
-  
   tag: java-11.0.15
 
  
