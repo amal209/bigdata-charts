@@ -24,8 +24,8 @@ helm install --name hdfs bigdata-gradiant/hdfs
 # Install Jupyter
 In the actual jupyter chart the image that is used doesn't contain JAVA
 ## to change it with another image that contain java: 
-- Go to jupyter chart
-- in values.yaml change actual image TO 
+* Go to jupyter chart
+* in values.yaml change actual image TO:
 image:
   registry: docker.io
   repository: jupyter/pyspark-notebook
